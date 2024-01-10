@@ -10,12 +10,13 @@ public class Box {
         this.width = width;
         this.height = height;
         this.depth = depth;
-
+        System.out.println("Three parameter constructor called");
     }
     public Box(int width,double height, double depth) { //called
         this.width = width;
         this.height = height;
         this.depth = depth;
+
     }
 
 
@@ -50,6 +51,10 @@ public class Box {
     public boolean equals(Box box){
         if(width==box.width && height==box.height && depth==box.depth) return true;
         else return false;
+    }
+    double volume1(){
+        System.out.println("Box volume1() method");
+        return this.volume();
     }
 
 }

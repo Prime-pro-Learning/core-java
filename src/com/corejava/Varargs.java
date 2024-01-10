@@ -3,6 +3,7 @@ package com.corejava;
 public class Varargs {
     static void test(int ...v){// varargs
         System.out.println("Number of args: "+ v.length);
+
         for(int x:v) System.out.print(x+" ");
         System.out.println();
     }
@@ -20,7 +21,9 @@ public class Varargs {
         test(10,20,30);
         test(true,false,true);
         test(true,false);
-        test();
+        //test();
+        for( ; ;) System.out.println();
+
         //test2();
         /*
         Number of args: 2
@@ -29,6 +32,7 @@ public class Varargs {
         10 20 30
         Number of args: 0
          */
+        //sum();
     }
 
 }
