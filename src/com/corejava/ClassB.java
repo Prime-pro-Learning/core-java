@@ -8,5 +8,8 @@ public class ClassB extends AbstractClassA{
     }
     void submit(){
         // person
+       /* val=96;
+        System.out.println(val);*/
     }
+
 }

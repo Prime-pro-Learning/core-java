@@ -23,6 +23,6 @@ public class AbstractDemo {
         System.out.println(f.area());
         f=t;
         System.out.println(f.area());*/
-        List
+
     }
 }
