@@ -2,7 +2,7 @@ package com.corejava;
 
 public class SimpleInheritanceDemo {
     public static void main(String[] args) {
-        SuperA superA=new SuperA();
+        /*SuperA superA=new SuperA();
         System.out.println(superA.i);
         System.out.println(superA.j);
         //System.out.println(superA.flag);
@@ -24,6 +24,6 @@ public class SimpleInheritanceDemo {
         subB.showK();
         subB.showIJ();
         subB.sum();
-        //System.out.println(subB.flag);
+        //System.out.println(subB.flag);*/
     }
 }

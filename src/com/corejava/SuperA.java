@@ -1,9 +1,14 @@
 package com.corejava;
 
-public class SuperA {
+public abstract class SuperA {
     private boolean flag=false;
     int i,j; //instance variables
-    void showIJ(){
-        System.out.println("i and j "+i + " "+j);
+    public SuperA(int a, int b){
+        i=a;
+        j=b;
     }
+    abstract void show();
+    /*void show(){
+        System.out.println("i and j "+i + " "+j);
+    }*/
 }
