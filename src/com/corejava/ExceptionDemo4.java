@@ -1,6 +1,8 @@
 package com.corejava;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Future;
 import java.util.function.Predicate;
@@ -15,14 +17,18 @@ public class ExceptionDemo4 {
         System.out.println("Email : "+email);
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
+
         try {
             //submit(null,"password@123","email@email.com");
-            //submit("ramesh","password@123",null);
-            submit("ramesh","password@123","email@email.com");
+            submit("ramesh","password@123",null);
+            //submit("ramesh","password@123","email@email.com");
+
         } catch (EmailNotFoundException e) {
             System.out.println(e.getMessage());
         }catch (UserNameNotFoundException e){
+            System.out.println(e.getMessage());
+        }catch (Exception e){
             System.out.println(e.getMessage());
         }
     }
