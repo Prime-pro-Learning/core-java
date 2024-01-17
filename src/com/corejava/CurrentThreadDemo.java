@@ -8,6 +8,7 @@ public class CurrentThreadDemo {
         //thread1.setName("ABC");
         thread.submit();
         thread.run();
+
         //System.out.println("Current Thread: "+thread);
         /*thread.setName("My Thread");
         System.out.println("After change the name: "+thread);*/
