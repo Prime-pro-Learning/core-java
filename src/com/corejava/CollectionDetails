@@ -1,0 +1,55 @@
+public interface Collection{
+    int size();
+  boolean isEmpty();
+  boolean contains(Object o);
+  boolean containsAll(Collection<?> c);
+  Iterator<E> iterator();
+  Object[] toArray();
+  <T> T[] toArray(T[] a);
+  boolean add(E e);
+  boolean addAll(Collection<? extends E> c);
+  boolean remove(Object o);
+    boolean removeAll(Collection<?> c);
+    boolean retainAll(Collection<?> c);
+     void clear();
+     ========================
+     public interface List extends Collection{
+     boolean addAll(int index, Collection<? extends E> c);
+     E get(int index);
+     E set(int index, E element);
+     void add(int index, E element);
+      E remove(int index);
+      int indexOf(Object o);
+    int lastIndexOf(Object o);
+    ListIterator<E> listIterator();
+    ListIterator<E> listIterator(int index);
+     List<E> subList(int fromIndex, int toIndex);
+     ==============================
+     public interface Set extends Collection{
+
+     ===============================
+     public interface Queue extends Collection{
+      boolean offer(E e);
+      E remove();
+      E poll();
+      E element();
+       E peek();
+       ============================
+       public interface Deque<E> extends Queue<E> {
+       void addFirst(E e);
+       void addLast(E e);
+       boolean offerFirst(E e);
+       boolean offerLast(E e);
+         E removeFirst();
+           E removeFirst();
+         E pollFirst();
+         E pollLast();
+          E getFirst();
+          E getLast();
+          E peekFirst();
+          E peekLast();
+          boolean removeFirstOccurrence(Object o);
+          boolean removeLastOccurrence(Object o);
+          void push(E e);
+          E pop();
+          Iterator<E> descendingIterator();
