@@ -6,6 +6,12 @@ public class Person {
 
     private String firstName;
 
+    public Person(String username, String password, String firstName) {
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -29,6 +35,13 @@ public class Person {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public static void sum(){}
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                '}';
+    }
 }
