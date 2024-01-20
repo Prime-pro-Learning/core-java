@@ -11,6 +11,8 @@ public class Person {
         this.password = password;
         this.firstName = firstName;
     }
+    Person(MB member){}
+
 
     public String getUsername() {
         return username;
@@ -43,5 +45,14 @@ public class Person {
                 ", password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
                 '}';
+    }
+
+    public static void main(String[] args) {
+        Member m=new Member();
+        Box b=new Box();
+        CB cb=new CB();
+        Person p=new Person(m);
+        Person p2=new Person(b);
+        Person p3=new Person(cb);
     }
 }

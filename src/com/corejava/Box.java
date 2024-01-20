@@ -1,6 +1,6 @@
 package com.corejava;
 
-public class Box {
+public class Box implements MB{
     private double width;
     private double height;
     private double depth;
